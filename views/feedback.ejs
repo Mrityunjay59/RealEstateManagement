@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <title>Feedback</title>
+
+        <!-- Meta Data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- CSS Links -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/feedback_styles.css">
+    
+    
+    </head>
+    <body>
+        <script>
+            if(message)
+            alert(message);
+        </script>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+            <div class="d-grid gap-2 custom_nav">
+              <button class="btn btn-dark" type="submit">
+                <h3 style="margin-top: 0.5rem;">R E M</h3>
+              </button>
+            </div>
+        <div class="container">
+            <div class="row">
+                    <h1>feedback</h1>
+            </div>
+            <div class="row">
+                    <h4 style="text-align:center">We'd love to hear from you!</h4>
+            </div>
+            <div class="row input-container">
+                <form action="/feedback" method="POST">
+                    <div class="col-xs-12">
+                        <div class="styled-input wide">
+                            <input type="text" name="name" required />
+                            <label>Name</label> 
+                        </div> 
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="styled-input">
+                            <input type="text" name="email" required />
+                            <label>Email</label> 
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="styled-input" style="float:right;">
+                            <input type="text" name="phone" required />
+                            <label>Phone Number</label> 
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="styled-input wide">
+                            <textarea name="feedback" required></textarea>
+                            <label>Message</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <input type="submit" class="button" value="Submit">
+                    </div>
+                </form>
+
+            </div>
+        </div>       
+ 
+        
+        <script src="" async defer></script>
+    </body>
+</html>

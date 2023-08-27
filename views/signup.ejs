@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+
+        <title>REM Login/Signup</title>
+
+        <!-- Meta Datas -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Links -->
+        <!-- Jquery Link -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <!-- CSS/Bootstrap Links -->
+        <link rel="stylesheet" href="css/signup_styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    </head>
+
+    <body style="color: rgb(86, 89, 92);background-image: linear-gradient(to right,  rgb(24, 24, 24), rgb(37, 37, 37)); margin: 2rem;">
+
+        <div class="row container-fluid">
+            <div class="col-6 ml-auto mr-auto">
+                <div class="card" style="background-color: rgb(33, 37, 41);">
+                    <h1 style="color: aliceblue;">Real Estate User</h1>
+                    <div class="login-box">
+                        <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                            <div class="login-space">
+                                <form class="login" action = "/login" method="post">
+                                    <div class="group"> <label for="user" class="label">Username</label> <input id="user" type="text" class="input" name="email" placeholder="Enter your username"> </div>
+                                    <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" class="input" name="password" data-type="password" placeholder="Enter your password"> </div>
+                                    <div class="group"> <input type="submit" class="button" value="Sign In"> </div>
+                                </form>
+                                    <div class="hr"></div>
+                                <div class="sign-up-form">
+                                    <form action = "/signup" method = "post">
+                                    <div class="group"> <label for="user" class="label">Username</label> <input id="user" name="username" type="text" class="input" placeholder="Create your Username"> </div>
+                                    <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" name="password" class="input" data-type="password" placeholder="Create your password"> </div>
+                                    <div class="group"> <label for="pass" class="label">Repeat Password</label> <input id="pass" type="password" name="repeatPassword" class="input" data-type="password" placeholder="Repeat your password"> </div>
+                                    <div class="group"> <label for="pass" class="label">Email Address</label> <input id="pass" type="text" class="input" name="email" placeholder="Enter your email address"> </div>
+                                    <div class="group"> <input type="submit" class="button" value="Sign Up"> </div>
+                                    </form> 
+                                    <div class="hr"></div>
+                                    <div class="foot"> <label for="tab-1">Already Member?</label> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- JS Links -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+
+</html>

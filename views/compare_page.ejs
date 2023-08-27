@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+  <title>REM: Compare Properties</title>
+
+  <!-- Meta Data -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Compare page for Properties">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/compare_styles.css">
+
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+  <!-- NavBar -->
+  <form action="/" method="GET">
+    <div class="d-grid gap-2 custom_nav">
+      <button class="btn btn-dark " type="submit">
+        <h3>R E M</h3>
+      </button>
+    </div>
+  </form>
+  <!-- NAV BAR END -->
+
+  <h1>Compare Properties</h1>
+
+  <div class="row">
+    <% for(var x = 0; x < rows.length; x++) { %>
+    <div class="col-6 d-flex flex-row-reverse">
+      <div class="card comp-container" style="width: 60%;">
+        <img src="https://is1-2.housingcdn.com/4f2250e8/731bee4e70d59e487e9601d23116071e/v0/fs/shriram_code_name_dil_chahta_hai-attibele_1-hosur-shriram_properties_limited.jpeg" class="card-img-top custom-card-img" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%= rows[x].name %></h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="card" style="width: 100%;">
+            <div class="card-header">
+              Featured
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">4th item</li>
+              <li class="list-group-item">5th item</li>
+              <li class="list-group-item">6th item</li>
+              <li class="list-group-item">7th item</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% } %>
+  </div>
+
+  <form action="/" method="GET">
+    <div class="d-grid gap-2 custom_nav">
+      <button class="btn btn-dark " type="submit">
+        <h3>Home</h3>
+      </button>
+    </div>
+  </form>
+
+  <!-- JS Links -->
+  <script src="" async defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
